@@ -1,0 +1,59 @@
+/* ============================================================
+   MOBILIAN — BASE RESET & PRIMITIVES
+   Minimal global resets + a couple of brand primitives that are
+   easier to ship as classes than to re-declare everywhere.
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--body);
+  font: var(--body-md);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Display headings default to the engineered uppercase voice */
+h1, h2, h3 {
+  color: var(--ink);
+  margin: 0;
+  letter-spacing: var(--track-display);
+}
+
+::selection { background: var(--electric); color: #fff; }
+
+/* ---- The 3-phase current stripe (brand signature) ---- */
+.mb-stripe {
+  display: block;
+  width: 100%;
+  height: var(--stripe-height);
+  background: var(--stripe-current);
+}
+.mb-stripe--soft { background: var(--stripe-current-soft); }
+
+/* ---- All-caps machined label ---- */
+.mb-label {
+  font: var(--label-upper);
+  text-transform: uppercase;
+  letter-spacing: var(--track-label);
+  color: var(--body);
+}
+
+/* ---- Mono technical readout ---- */
+.mb-mono {
+  font: var(--mono-md);
+  letter-spacing: var(--track-mono);
+  color: var(--body-strong);
+}
+
+/* reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
+}

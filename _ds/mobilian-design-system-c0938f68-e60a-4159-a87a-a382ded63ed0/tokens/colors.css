@@ -1,0 +1,61 @@
+/* ============================================================
+   MOBILIAN — COLOR TOKENS
+   Motorsport-engineering palette: near-black canvas, white type,
+   electric "current" accents. No decorative gradients on the
+   page floor — energy comes from imagery + the 3-phase stripe.
+   ============================================================ */
+
+:root {
+  /* ---- Canvas & surfaces (near-black, cool-neutral) ---- */
+  --canvas:           #000000; /* true-black page floor */
+  --surface-soft:     #0c0d0f; /* spec cells, footer strips */
+  --surface-card:     #16181c; /* cards, secondary buttons, icon buttons */
+  --surface-elevated: #202327; /* nested cards inside dark bands */
+  --carbon:           #26292e; /* carbon-texture technical cards */
+
+  /* ---- Hairlines & borders ---- */
+  --hairline:         #34373d; /* 1px dividers on dark surfaces */
+  --hairline-strong:  #21242a; /* feels like a one-step elevation */
+  --hairline-faint:   #1a1c20;
+
+  /* ---- Text ---- */
+  --ink:              #ffffff; /* all display + primary text */
+  --on-dark:          #ffffff;
+  --body:             #b4b8bf; /* default running text (cool grey) */
+  --body-strong:      #e4e6ea; /* lead paragraphs / emphasis */
+  --muted:            #7c8088; /* footer links, captions, meta */
+  --on-accent:        #00110f; /* text on charge-green fills */
+  --on-electric:      #ffffff; /* text on electric-blue fills */
+
+  /* ---- ELECTRIC / CURRENT ACCENTS (Mobilian signature) ----
+     The 3-phase "current stripe" — L1 / L2 / L3 — is Mobilian's
+     brand signature, the way a motorsport tricolor would be.
+     Used on dividers, badges, logo mark, charge-state callouts.
+     NEVER as a button fill, NEVER as a page background. */
+  --phase-1:          #00e0c6; /* L1 — signal teal  */
+  --phase-2:          #2f80ff; /* L2 — electric blue (primary action) */
+  --phase-3:          #3ddc84; /* L3 — charge green */
+
+  /* primary interactive accent (the action color) */
+  --electric:         #2f80ff;
+  --electric-bright:  #4f97ff;
+  --electric-dim:     #1f5fd6;
+
+  /* charge / energy secondary */
+  --charge:           #3ddc84;
+  --charge-dim:       #25b86a;
+
+  /* ---- Semantic ---- */
+  --warning:          #f4b400;
+  --warning-dim:      #c9930a;
+  --success:          #3ddc84; /* == charge */
+  --danger:           #ff4438;
+  --danger-dim:       #d62f25;
+  --info:             #2f80ff; /* == electric */
+
+  /* ---- Charge-state status dots (domain-specific) ---- */
+  --state-available:  #3ddc84; /* ready / available */
+  --state-charging:   #2f80ff; /* in session */
+  --state-fault:      #ff4438; /* fault / error */
+  --state-offline:    #7c8088; /* offline / unknown */
+}

@@ -1,0 +1,9 @@
+/* ============================================================
+   MOBILIAN — FONTS
+   Display : Saira          — engineered, semi-technical, UPPERCASE
+   Body    : IBM Plex Sans  — grotesque, light weight for body
+   Mono    : IBM Plex Mono  — protocol / spec / data readouts
+   (Webfonts loaded from Google Fonts. Substituted — see readme.)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
