@@ -192,21 +192,22 @@ function P4Video() {
         <CurrentFlow y={632} />
       </Sprite>
 
-      {/* SCENE 3 — 5 diagnostics (8.6–20.3) */}
+      {/* SCENE 3 — 6 diagnostics (8.6–20.3) */}
       <Sprite start={8.6} end={20.3}><GridBG opacity={0.6} /></Sprite>
       <Sprite start={8.6} end={20.3}>
         <Block x={92} y={70} w={900} delay={0}><Eyebrow text="Diagnostic Classification" /></Block>
-        <Block x={90} y={102} w={1000} delay={0.2}><div style={{ font: `700 44px ${KR}`, color: INK, letterSpacing: '-0.01em' }}>실패 원인을 5가지로 분류한다</div></Block>
+        <Block x={90} y={102} w={1000} delay={0.2}><div style={{ font: `700 44px ${KR}`, color: INK, letterSpacing: '-0.01em' }}>실패 원인을 6가지로 분류한다</div></Block>
       </Sprite>
       {[
         { c: P1, k: 'CP · PWM', t: '제어 신호', s: 'CP State · PWM duty', V: SquareWave },
         { c: P2, k: 'RELAY · AC', t: '릴레이 / 출력', s: 'K1/K2 · AC output', V: SineWave },
         { c: P3, k: 'PLC · SLAC', t: '통신 링크', s: 'SLAC · SDP · PLC', V: LinkPackets },
         { c: WARN, k: 'ISO 15118', t: '충전 단계', s: 'V2G · EV SoC', V: SocGauge },
+        { c: '#b89cff', k: 'TLS · VAS', t: '보안 / VAS', s: 'TLS Cert · VAS/BIP', V: ReportCheck },
         { c: INK, k: 'REPORT', t: '판정 · 로그', s: 'Report · Live log', V: ReportCheck },
       ].map((d, i) => (
         <Sprite key={i} start={9.4 + i * 1.35} end={20.3}>
-          <DiagCard x={104 + i * 218} y={205} w={200} h={340} color={d.c} kicker={d.k} title={d.t} sub={d.s} Viz={d.V} />
+          <DiagCard x={70 + i * 190} y={205} w={174} h={340} color={d.c} kicker={d.k} title={d.t} sub={d.s} Viz={d.V} />
         </Sprite>
       ))}
 
