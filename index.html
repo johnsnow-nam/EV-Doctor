@@ -75,8 +75,8 @@ a{color:inherit}
     </div>
     <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px;border-top:1px solid var(--hairline);padding-top:22px;max-width:560px">
       <div>
-        <div style="font:700 22px/1.1 var(--font-display);color:var(--ink)">330만~490만</div>
-        <div style="font:var(--caption);color:var(--body);margin-top:6px">Field Pilot ~ Pro 본체가 · VAT 별도</div>
+        <div style="font:700 22px/1.1 var(--font-display);color:var(--ink)">50만~490만</div>
+        <div style="font:var(--caption);color:var(--body);margin-top:6px">lite 사전 ~ pro 정식 · VAT 별도</div>
       </div>
       <div>
         <div style="font:700 22px/1.1 var(--font-display);color:var(--ink)">ISO 15118</div>
@@ -113,7 +113,7 @@ a{color:inherit}
       <x-import component-from-global-scope="MobilianDesignSystem_c0938f.Button" size="lg" variant="outline" on-click="{{ goMarket }}" hint-size="auto,56px">시장 포지션 보기</x-import>
     </div>
     <div style="display:flex;gap:44px;flex-wrap:wrap;border-top:1px solid var(--hairline);padding-top:22px">
-      <div><div style="font:700 22px/1.1 var(--font-display);color:var(--ink)">330만~490만</div><div style="font:var(--caption);color:var(--body);margin-top:6px">Field Pilot ~ Pro · VAT 별도</div></div>
+      <div><div style="font:700 22px/1.1 var(--font-display);color:var(--ink)">50만~490만</div><div style="font:var(--caption);color:var(--body);margin-top:6px">lite 사전 ~ pro 정식 · VAT 별도</div></div>
       <div><div style="font:700 22px/1.1 var(--font-display);color:var(--ink)">ISO 15118 AC</div><div style="font:var(--caption);color:var(--body);margin-top:6px">SLAC · SDP · TLS/NoTLS · ChargingStatus</div></div>
       <div><div style="font:700 22px/1.1 var(--font-display);color:var(--ink)">6단계 분류</div><div style="font:var(--caption);color:var(--body);margin-top:6px">CP·릴레이·PLC·TLS/VAS·V2G·리포트</div></div>
     </div>
@@ -159,13 +159,13 @@ a{color:inherit}
   <div style="border:1px solid var(--hairline);margin-bottom:32px">
     <img src="assets/p4-position-map.png" alt="어댑터·P4·연구소 장비의 3단계 시장 포지션 맵" style="display:block;width:100%">
   </div>
-  <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px">
+  <div style="display:grid;grid-template-columns:repeat(5,1fr);gap:20px">
     <div style="border:1px solid var(--hairline);background:var(--surface-card);padding:26px 24px">
       <div style="width:34px;height:4px;background:var(--charge);margin-bottom:16px"></div>
       <div style="font:var(--mono-sm);letter-spacing:.06em;color:var(--charge);margin-bottom:8px">P4 · LITE</div>
-      <h3 style="font:600 18px/1.3 'IBM Plex Sans KR';color:var(--ink);margin:0 0 6px">P4 Light</h3>
+      <h3 style="font:600 18px/1.3 'IBM Plex Sans KR';color:var(--ink);margin:0 0 6px">P4 Lite</h3>
       <div style="font:var(--mono-sm);color:var(--body-strong);margin-bottom:12px">입문형 · <span style="text-decoration:line-through;color:var(--body)">스토어 90만원</span> <span style="color:var(--charge)">사전 50만원</span></div>
-      <p style="font:400 14px/1.6 'IBM Plex Sans KR';color:var(--body-strong);margin:0">핵심 CP/PWM·PLC 신호만 간단히 확인하는 입문형. 저가 어댑터에서 한 단계 올라선 현장 진단 진입 모델입니다.</p>
+      <p style="font:400 14px/1.6 'IBM Plex Sans KR';color:var(--body-strong);margin:0">완속(AC) 현장에서 CP/PWM과 기본 신호를 확인하는 진입 모델입니다. PLC·DC·CAN 기능은 포함하지 않습니다.</p>
     </div>
     <div style="border:1px solid var(--hairline);background:var(--surface-card);padding:26px 24px">
       <div style="width:34px;height:4px;background:var(--warning);margin-bottom:16px"></div>
@@ -177,11 +177,18 @@ a{color:inherit}
     <div style="border:1px solid rgba(0,224,198,.55);background:var(--surface-elevated);padding:0 0 28px;position:relative">
       <div style="height:4px;background:var(--stripe-current)"></div>
       <div style="padding:24px 24px 0">
-        <div style="font:var(--mono-sm);letter-spacing:.06em;color:var(--phase-1);margin-bottom:8px">P4 · FIELD</div>
+        <div style="font:var(--mono-sm);letter-spacing:.06em;color:var(--phase-1);margin-bottom:8px">P4 · PRO</div>
         <h3 style="font:700 20px/1.3 'IBM Plex Sans KR';color:var(--ink);margin:0 0 6px">P4 Pro</h3>
-        <div style="font:var(--mono-sm);color:var(--ink);margin-bottom:12px">330만~490만원</div>
-        <p style="font:300 14px/1.6 'IBM Plex Sans KR';color:var(--body-strong);margin:0">전기 신호 + PLC/ISO 15118 AC 통신을 한 장비에서. 현장 원인 분류에 집중합니다.</p>
+        <div style="font:var(--mono-sm);color:var(--ink);margin-bottom:12px">정식 490만원</div>
+        <p style="font:300 14px/1.6 'IBM Plex Sans KR';color:var(--body-strong);margin:0">급속·PLC/ISO 15118 AC 통신을 관측하고 TLS·VAS/BIP 결과까지 리포트합니다.</p>
       </div>
+    </div>
+    <div style="border:1px solid var(--hairline);background:var(--surface-card);padding:26px 24px">
+      <div style="width:34px;height:4px;background:var(--phase-2);margin-bottom:16px"></div>
+      <div style="font:var(--mono-sm);letter-spacing:.06em;color:var(--phase-2);margin-bottom:8px">P4 · MAX</div>
+      <h3 style="font:600 18px/1.3 'IBM Plex Sans KR';color:var(--ink);margin:0 0 6px">P4 Max</h3>
+      <div style="font:var(--mono-sm);color:var(--body-strong);margin-bottom:12px">690만~890만원</div>
+      <p style="font:400 14px/1.6 'IBM Plex Sans KR';color:var(--body-strong);margin:0">전 기능(AC/PLC/DC/CAN)과 PC 분석도구·현장 지원까지 아우르는 개발·인증 프로젝트용입니다.</p>
     </div>
     <div style="border:1px solid var(--hairline);background:var(--surface-card);padding:26px 24px">
       <div style="width:34px;height:4px;background:var(--electric);margin-bottom:16px"></div>
@@ -361,39 +368,52 @@ a{color:inherit}
   <div style="max-width:1240px;margin:0 auto;padding:96px 32px">
     <div style="max-width:720px;margin-bottom:44px">
       <span style="font:600 13px/1.3 var(--font-display);text-transform:uppercase;letter-spacing:.14em;color:var(--phase-1)">Pricing · Lineup</span>
-      <h2 style="font:700 clamp(28px,3.4vw,42px)/1.14 'IBM Plex Sans KR';letter-spacing:-.01em;color:var(--ink);margin:16px 0 18px">본체가 330만원부터, 정식가 490만원</h2>
-      <p style="font:400 17px/1.7 'IBM Plex Sans KR';color:var(--body-strong);margin:0">{{ pilotNote }}<br>아래 세 패키지 모두 VAT 별도이며, 사전예약으로 초기 물량과 지원을 확보할 수 있습니다.</p>
+      <h2 style="font:700 clamp(28px,3.4vw,42px)/1.14 'IBM Plex Sans KR';letter-spacing:-.01em;color:var(--ink);margin:16px 0 18px">현장 범위에 맞춘 P4 4등급 라인업</h2>
+      <p style="font:400 17px/1.7 'IBM Plex Sans KR';color:var(--body-strong);margin:0">{{ pilotNote }}<br>sample 체험부터 lite·pro 사전예약, max 프로젝트 구성까지 필요한 범위를 선택할 수 있습니다.</p>
     </div>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:start">
       <div style="border:1px solid var(--hairline);background:var(--surface-card);padding:30px 26px;display:flex;flex-direction:column">
-        <div style="font:600 12px/1.3 var(--font-display);text-transform:uppercase;letter-spacing:.12em;color:var(--warning);margin-bottom:14px">Pilot</div>
-        <h3 style="font:700 21px/1.3 'IBM Plex Sans KR';color:var(--ink);margin:0 0 4px">P4 Field Pilot</h3>
-        <p style="font:400 14px/1.5 'IBM Plex Sans KR';color:var(--body);margin:0 0 20px">초기 현장 검증 고객</p>
-        <div style="display:flex;align-items:baseline;gap:4px;margin-bottom:6px"><span style="font:700 38px/1 var(--font-display);color:var(--ink);white-space:nowrap">330만</span><span style="font:300 16px/1 'IBM Plex Sans KR';color:var(--body)">원</span></div>
-        <div style="font:var(--caption);color:var(--body);margin-bottom:22px">VAT 별도 · 선착순 {{ pilotUnits }}대</div>
+        <div style="font:600 12px/1.3 var(--font-display);text-transform:uppercase;letter-spacing:.12em;color:var(--warning);margin-bottom:14px">SAMPLE · 체험판(비매품)</div>
+        <h3 style="font:700 21px/1.3 'IBM Plex Sans KR';color:var(--ink);margin:0 0 4px">P4 Sample</h3>
+        <p style="font:400 14px/1.5 'IBM Plex Sans KR';color:var(--body);margin:0 0 20px">도입 전 기능 체험</p>
+        <div style="display:flex;align-items:baseline;gap:4px;margin-bottom:6px"><span style="font:700 27px/1 var(--font-display);color:var(--ink);white-space:nowrap">무료 체험 / 문의</span></div>
+        <div style="font:var(--caption);color:var(--body);margin-bottom:22px">비매품 · START 사용 횟수 제한</div>
         <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:26px">
-          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>현장 AC ISO 15118 진단</div>
-          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>전기 신호 + PLC 통신 관찰</div>
-          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>TEST RESULT + 라이브 로그 수집</div>
+          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>전 기능 체험</div>
+          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>START 사용 횟수 제한</div>
         </div>
         <div style="margin-top:auto">
-          <x-import component-from-global-scope="MobilianDesignSystem_c0938f.Button" size="md" variant="outline" on-click="{{ goReserve }}" hint-size="100%,48px" style="width:100%">사전예약</x-import>
+          <x-import component-from-global-scope="MobilianDesignSystem_c0938f.Button" size="md" variant="outline" on-click="{{ goReserve }}" hint-size="100%,48px" style="width:100%">문의</x-import>
+        </div>
+      </div>
+      <div style="border:1px solid var(--hairline);background:var(--surface-card);padding:30px 26px;display:flex;flex-direction:column">
+        <div style="font:600 12px/1.3 var(--font-display);text-transform:uppercase;letter-spacing:.12em;color:var(--charge);margin-bottom:14px">LITE · 완속(AC) 현장</div>
+        <h3 style="font:700 21px/1.3 'IBM Plex Sans KR';color:var(--ink);margin:0 0 4px">P4 Lite</h3>
+        <p style="font:400 14px/1.5 'IBM Plex Sans KR';color:var(--body);margin:0 0 20px">완속 충전 현장 기본 진단</p>
+        <div style="display:flex;align-items:baseline;gap:4px;margin-bottom:6px"><span style="font:700 27px/1 var(--font-display);color:var(--ink);white-space:nowrap">사전 50만 / 스토어 90만</span></div>
+        <div style="font:var(--caption);color:var(--body);margin-bottom:22px">VAT 별도</div>
+        <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:26px">
+          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>AC(IEC 61851) 시험</div>
+          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>CP/PWM·기본 신호 확인</div>
+          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>PLC·DC·CAN 미포함</div>
+        </div>
+        <div style="margin-top:auto">
+          <x-import component-from-global-scope="MobilianDesignSystem_c0938f.Button" size="md" variant="charge" on-click="{{ goReserve }}" hint-size="100%,48px" style="width:100%">사전예약</x-import>
         </div>
       </div>
       <div style="border:1px solid var(--charge-dim);background:var(--surface-elevated);padding:0 0 30px;display:flex;flex-direction:column;box-shadow:0 0 0 1px rgba(61,220,132,.15) inset">
         <div style="height:4px;background:var(--stripe-current)"></div>
         <div style="padding:30px 26px 0;display:flex;flex-direction:column;flex:1">
-          <div style="font:600 12px/1.3 var(--font-display);text-transform:uppercase;letter-spacing:.12em;color:var(--charge);margin-bottom:14px">정식가 · 추천</div>
+          <div style="font:600 12px/1.3 var(--font-display);text-transform:uppercase;letter-spacing:.12em;color:var(--charge);margin-bottom:14px">PRO · 급속·PLC 진단 · 추천</div>
           <h3 style="font:700 21px/1.3 'IBM Plex Sans KR';color:var(--ink);margin:0 0 4px">P4 Pro</h3>
-          <p style="font:400 14px/1.5 'IBM Plex Sans KR';color:var(--body);margin:0 0 20px">정식 판매 기준 · A/S·품질팀</p>
-          <div style="display:flex;align-items:baseline;gap:4px;margin-bottom:6px"><span style="font:700 40px/1 var(--font-display);color:var(--ink);white-space:nowrap">490만</span><span style="font:300 16px/1 'IBM Plex Sans KR';color:var(--body)">원</span></div>
-          <div style="font:var(--caption);color:var(--body);margin-bottom:22px">VAT 별도</div>
+          <p style="font:400 14px/1.5 'IBM Plex Sans KR';color:var(--body);margin:0 0 20px">급속·PLC 현장 원인 분류</p>
+          <div style="display:flex;align-items:baseline;gap:4px;margin-bottom:6px"><span style="font:700 32px/1 var(--font-display);color:var(--ink);white-space:nowrap">정식 490만</span></div>
+          <div style="font:var(--caption);color:var(--body);margin-bottom:22px">사전 330만 · VAT 별도</div>
           <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:26px">
-            <div style="display:flex;gap:9px;font:300 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>Field Pilot 전체 기능</div>
-            <div style="display:flex;gap:9px;font:300 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>NoTLS/AUTO/TLS 선택 진단</div>
-            <div style="display:flex;gap:9px;font:300 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>TLS 인증서·VAS/BIP 결과 리포트</div>
-            <div style="display:flex;gap:9px;font:300 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>PC 화면·로그 증적 패키지화</div>
-            <div style="display:flex;gap:9px;font:300 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>펌웨어 유지보수</div>
+            <div style="display:flex;gap:9px;font:300 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>AC + PLC/SLAC/SDP 관측</div>
+            <div style="display:flex;gap:9px;font:300 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>ISO 15118 AC·TLS 진단</div>
+            <div style="display:flex;gap:9px;font:300 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>VAS/BIP 관측·리포트</div>
+            <div style="display:flex;gap:9px;font:300 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>PLC 상세 조작은 관측 수준</div>
           </div>
           <div style="margin-top:auto">
             <x-import component-from-global-scope="MobilianDesignSystem_c0938f.Button" size="md" variant="charge" on-click="{{ goReserve }}" hint-size="100%,48px" style="width:100%">사전예약 신청</x-import>
@@ -401,21 +421,24 @@ a{color:inherit}
         </div>
       </div>
       <div style="border:1px solid var(--hairline);background:var(--surface-card);padding:30px 26px;display:flex;flex-direction:column">
-        <div style="font:600 12px/1.3 var(--font-display);text-transform:uppercase;letter-spacing:.12em;color:var(--electric-bright);margin-bottom:14px">Project</div>
-        <h3 style="font:700 21px/1.3 'IBM Plex Sans KR';color:var(--ink);margin:0 0 4px">P4 Pro + Field Support</h3>
-        <p style="font:400 14px/1.5 'IBM Plex Sans KR';color:var(--body);margin:0 0 20px">제조사 · 운영사 프로젝트</p>
+        <div style="font:600 12px/1.3 var(--font-display);text-transform:uppercase;letter-spacing:.12em;color:var(--electric-bright);margin-bottom:14px">MAX · 개발·인증·프로젝트</div>
+        <h3 style="font:700 21px/1.3 'IBM Plex Sans KR';color:var(--ink);margin:0 0 4px">P4 Max</h3>
+        <p style="font:400 14px/1.5 'IBM Plex Sans KR';color:var(--body);margin:0 0 20px">개발·인증·현장 지원 프로젝트</p>
         <div style="display:flex;align-items:baseline;gap:4px;margin-bottom:6px"><span style="font:700 27px/1 var(--font-display);color:var(--ink);white-space:nowrap">690만~890만</span><span style="font:300 16px/1 'IBM Plex Sans KR';color:var(--body)">원</span></div>
         <div style="font:var(--caption);color:var(--body);margin-bottom:22px">VAT 별도 · 지원 포함</div>
         <div style="display:flex;flex-direction:column;gap:10px;margin-bottom:26px">
-          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>P4 Pro 전체 기능</div>
-          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>충전기별 TLS/VAS 호환성 대응</div>
-          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>현장 화면/로그 보강</div>
-          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>프로젝트 초기 지원</div>
+          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>전 기능(AC/PLC/DC/CAN)</div>
+          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>PC 분석도구·실시간 로그·LCD 화면증적</div>
+          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>TLS 인증서 리포트·반복 재현·리포트 패키지</div>
+          <div style="display:flex;gap:9px;font:400 14px/1.4 'IBM Plex Sans KR';color:var(--body-strong)"><span style="color:var(--charge)">●</span>현장 지원</div>
         </div>
         <div style="margin-top:auto">
           <x-import component-from-global-scope="MobilianDesignSystem_c0938f.Button" size="md" variant="outline" on-click="{{ goReserve }}" hint-size="100%,48px" style="width:100%">문의하기</x-import>
         </div>
       </div>
+    </div>
+    <div style="display:inline-flex;align-items:center;gap:10px;margin-top:20px;padding:10px 14px;border:1px solid var(--hairline);background:var(--surface-card);font:400 13px/1.4 'IBM Plex Sans KR';color:var(--body-strong)">
+      <span style="width:7px;height:7px;background:var(--charge);border-radius:50%"></span>칩에 바인딩된 정품 펌웨어 라이센스로 무단 복제·타 보드 이식 불가
     </div>
   </div>
 </section>
@@ -522,7 +545,7 @@ a{color:inherit}
       <h2 style="font:700 clamp(30px,3.6vw,46px)/1.1 'IBM Plex Sans KR';letter-spacing:-.01em;color:var(--ink);margin:0 0 20px">사전예약으로<br>초기 물량을 확보하세요</h2>
       <p style="font:400 17px/1.7 'IBM Plex Sans KR';color:var(--body-strong);margin:0 0 28px">{{ pilotNote }}<br>충전기 제조사·운영사·시험 기관·설치 현장, 어떤 환경이든 담당자가 구성과 일정을 함께 잡아드립니다.</p>
       <div style="display:flex;flex-direction:column;gap:14px">
-        <div style="display:flex;align-items:center;gap:12px;font:300 15px/1.5 'IBM Plex Sans KR';color:var(--body-strong)"><span style="width:8px;height:8px;background:var(--charge);border-radius:50%"></span>Field Pilot 선착순 {{ pilotUnits }}대 우선 배정</div>
+        <div style="display:flex;align-items:center;gap:12px;font:300 15px/1.5 'IBM Plex Sans KR';color:var(--body-strong)"><span style="width:8px;height:8px;background:var(--charge);border-radius:50%"></span>sample 체험·lite 사전 물량 선착순 {{ pilotUnits }}대 우선 안내</div>
         <div style="display:flex;align-items:center;gap:12px;font:300 15px/1.5 'IBM Plex Sans KR';color:var(--body-strong)"><span style="width:8px;height:8px;background:var(--electric);border-radius:50%"></span>현장 환경 맞춤 구성 제안</div>
         <div style="display:flex;align-items:center;gap:12px;font:300 15px/1.5 'IBM Plex Sans KR';color:var(--body-strong)"><span style="width:8px;height:8px;background:var(--phase-1);border-radius:50%"></span>충전기 호환성 사전 협의</div>
       </div>
@@ -543,7 +566,7 @@ a{color:inherit}
               </select></div>
             <div><label style="display:block;font:600 11px/1.3 var(--font-display);text-transform:uppercase;letter-spacing:.1em;color:var(--body);margin-bottom:8px">관심 모델</label>
               <select class="p4in" name="tier">
-                <option>P4 Field Pilot</option><option>P4 Pro</option><option>P4 Pro + Field Support</option>
+                <option>P4 Sample</option><option>P4 Lite</option><option>P4 Pro</option><option>P4 Max</option>
               </select></div>
           </div>
           <div><label style="display:block;font:600 11px/1.3 var(--font-display);text-transform:uppercase;letter-spacing:.1em;color:var(--body);margin-bottom:8px">문의 내용</label><textarea class="p4in" name="message" style="height:96px;padding:12px 14px;resize:vertical" placeholder="현장 환경, 대상 충전기, 필요 수량 등"></textarea></div>
@@ -616,7 +639,7 @@ class Component extends DCLogic {
       heroFull: hv === '풀블리드',
       heroCenter: hv === '센터',
       pilotUnits,
-      pilotNote: `P4 Field Pilot는 선착순 ${pilotUnits}대 한정입니다.`,
+      pilotNote: `sample 체험·lite 사전 물량은 선착순 ${pilotUnits}대 우선 안내합니다.`,
       submitted: this.state.submitted,
       notSubmitted: !this.state.submitted,
       goReserve: () => { window.location.hash = '#reserve'; },
@@ -654,6 +677,7 @@ class Component extends DCLogic {
         { feature: '독립형 LCD · 터치 · 로터리', a: 'no', p4: 'yes', lab: 'partial' },
         { feature: 'TEST RESULT · 현장 로그 · PC 리포트 패키지', a: 'no', p4: 'yes', lab: 'yes' },
         { feature: 'CCS / conformance / 부하', a: 'no', p4: 'no', lab: 'yes' },
+        { feature: '정품 펌웨어 라이센스 (복제 방지)', a: 'no', p4: 'yes', lab: 'no' },
       ],
       specCells: [
         { label: '대상 규격', value: 'ISO 15118 AC' },
